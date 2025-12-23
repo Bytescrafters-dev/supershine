@@ -14,7 +14,7 @@ export default function Home() {
       <Stats />
       <Intro />
       <HomeServices />
-      <HowWeWork />
+      {/* <HowWeWork /> */}
       {/* <Testimonials /> */}
     </main>
   );
