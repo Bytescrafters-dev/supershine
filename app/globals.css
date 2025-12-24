@@ -8,6 +8,14 @@
   font-family: "Handjet", sans-serif;
 }
 
+.kaushan {
+  font-family: var(--font-kaushan), cursive;
+}
+
+.josefin {
+  font-family: var(--font-josefin), sans-serif;
+}
+
 .Welcome-text {
   background: linear-gradient(
       0deg,

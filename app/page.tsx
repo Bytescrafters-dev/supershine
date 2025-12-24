@@ -4,6 +4,7 @@ import HomeServices from "@/components/main/HomeServices";
 import HowWeWork from "@/components/main/HowWeWork";
 import Intro from "@/components/main/Intro";
 import Stats from "@/components/main/stats";
+import AddOns from "@/components/main/AddOns";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Stats />
       <Intro />
       <HomeServices />
+      <AddOns />
       {/* <HowWeWork /> */}
       {/* <Testimonials /> */}
     </main>

@@ -18,9 +18,8 @@ const Footer = () => {
 
           <div className="text-center xl:text-left">
             <h3 className="font-semibold mb-4">Contact</h3>
-            <p className="text-sm mb-2">Info.bytecrafters@gmail.com</p>
+            <p className="text-sm mb-2">supershinedetailers.info@gmail.com</p>
             <p className="text-sm mb-2">+61 450 150 214</p>
-            <p className="text-sm">26 Muyan Cct Burwood Victoria 3125</p>
           </div>
 
           <div className="text-center xl:text-left">

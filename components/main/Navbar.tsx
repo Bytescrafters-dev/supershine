@@ -10,10 +10,10 @@ const links = [
     name: "home",
     path: "/",
   },
-  {
-    name: "about us",
-    path: "/about-us",
-  },
+  // {
+  //   name: "about us",
+  //   path: "/about-us",
+  // },
   // {
   //   name: "our services",
   //   path: "/our-services",
@@ -34,7 +34,7 @@ const Nav = ({ isOpen, toggleMenu }: Props) => {
 
   return (
     <>
-      <nav className="hidden md:flex gap-8">
+      <nav className="hidden md:flex gap-8 items-center">
         {links.map(({ name, path }) => {
           return (
             <Link
@@ -50,6 +50,9 @@ const Nav = ({ isOpen, toggleMenu }: Props) => {
             </Link>
           );
         })}
+        <button className="py-2 px-5 button-primary text-center text-white cursor-pointer  rounded-lg max-w-[200px]">
+          Book Appointment
+        </button>
       </nav>
 
       <div

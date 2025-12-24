@@ -25,19 +25,19 @@ const HeroContent = () => {
           <div className="flex gap-8">
             <div className="flex">
               <CursorArrowRaysIcon className="text-gray-300 mr-2.5 h-4 xl:h-7 w-4 xl:w-7" />
-              <h1 className="welcome-text font-bold text-red-700 shadow text-md xl:text-xl">
+              <h1 className="welcome-text font-bold text-red-700 shadow text-md xl:text-3xl">
                 Your Car
               </h1>
             </div>
             <div className="flex">
               <CursorArrowRaysIcon className="text-gray-300 mr-2.5 h-4 xl:h-7 w-4 xl:w-7" />
-              <h1 className="welcome-text font-bold text-red-700 shadow text-md xl:text-xl">
+              <h1 className="welcome-text font-bold text-red-700 shadow text-md xl:text-3xl">
                 Your Location
               </h1>
             </div>
             <div className="flex">
               <CursorArrowRaysIcon className="text-gray-300 mr-2.5 h-4 xl:h-7 w-4 xl:w-7" />
-              <h1 className="welcome-text font-bold text-red-700 shadow text-md xl:text-xl">
+              <h1 className="welcome-text font-bold text-red-700 shadow text-md xl:text-3xl">
                 Our Shine
               </h1>
             </div>

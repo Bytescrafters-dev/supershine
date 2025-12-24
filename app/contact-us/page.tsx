@@ -126,7 +126,7 @@ const ContactUs = () => {
           </div>
           <div className="flex flex-col md:grid md:grid-cols-2">
             <span className="font-semibold">Email Address</span>
-            <span>: info.bytecrafters@gmail.com</span>
+            <span>: supershinedetailers.info@gmail.com</span>
           </div>
         </div>
       </div>
