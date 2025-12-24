@@ -50,9 +50,12 @@ const Nav = ({ isOpen, toggleMenu }: Props) => {
             </Link>
           );
         })}
-        <button className="py-2 px-5 button-primary text-center text-white cursor-pointer  rounded-lg max-w-[200px]">
+        <Link
+          href="/contact-us"
+          className="py-2 px-5 button-primary text-center text-white cursor-pointer  rounded-lg max-w-[200px]"
+        >
           Book Appointment
-        </button>
+        </Link>
       </nav>
 
       <div

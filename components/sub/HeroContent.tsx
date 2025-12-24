@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { CursorArrowRaysIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
@@ -74,9 +75,12 @@ const HeroContent = () => {
           <button className="py-2 px-5 button-secondary text-center text-white cursor-pointer  rounded-lg max-w-[200px]">
             Explore Services
           </button>
-          <button className="py-2 px-5 button-primary text-center text-white cursor-pointer  rounded-lg max-w-[200px]">
+          <Link
+            href="/contact-us"
+            className="py-2 px-5 button-primary text-center text-white cursor-pointer  rounded-lg max-w-[200px]"
+          >
             Book Appointment
-          </button>
+          </Link>
         </motion.div>
       </div>
     </motion.div>

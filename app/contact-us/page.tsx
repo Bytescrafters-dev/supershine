@@ -94,6 +94,10 @@ const ContactUs = () => {
             rows={4}
             className="p-4 border rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-accent"
           />
+          <div className="text-sm text-gray-400">
+            Send us the service you’re looking for, along with your preferred
+            date and time, and we’ll get back to you as soon as possible.
+          </div>
           <div className="flex justify-center md:justify-end">
             <button
               type="submit"
