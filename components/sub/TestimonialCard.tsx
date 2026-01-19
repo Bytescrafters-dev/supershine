@@ -11,8 +11,8 @@ type TestimonialProps = {
 const TestimonialCard = ({ name, rating, description }: TestimonialProps) => {
   const maxStars = 5;
   const colors = ["#EF6C02", "#445A64", "#5C6BC0", "#004D40", "#02579B"];
-  const getRandomColor = () =>
-    colors[Math.floor(Math.random() * colors.length)];
+  const charCode = name?.charCodeAt(0) || 65;
+  const backgroundColor = colors[charCode % colors.length];
 
   const getTruncatedText = (text: string, wordLimit: number) => {
     const words = text.split(" ");
@@ -39,9 +39,9 @@ const TestimonialCard = ({ name, rating, description }: TestimonialProps) => {
     >
       <div
         className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-4xl font-bold"
-        style={{ backgroundColor: getRandomColor() }}
+        style={{ backgroundColor }}
       >
-        {name.charAt(0).toUpperCase()}
+        {name?.charAt(0).toUpperCase()}
       </div>
       <h3 className="text-xl font-semibold mb-2">{name}</h3>
       <div className="flex justify-center mb-3 text-yellow-500">

@@ -114,7 +114,7 @@ const Testimonials = () => {
         <div className="text-center">Leave us a review at</div>
         <Image
           src={"/GoogleLogo.png"}
-          alt={`${name} profile`}
+          alt="Google Logo"
           width={100}
           height={80}
           className="rounded-full object-cover"
