@@ -40,10 +40,25 @@ const HomeServices = () => {
       tag: "Showroom-grade shine & paint correction",
       prices: ["Only $319 (Sedan/Hatch)", "Only $359 (SUV/Larger Cars)"],
     },
+    {
+      title: "Premium In and Out Transformation",
+      image: "/InsideOut.jpg",
+      description: "Perfect for transform your car into showroom condition",
+      services: [
+        "Full Essential Shine package.",
+        "Interior Deep Clean",
+        "Premium Polish & Wax.",
+      ],
+      tag: "Showroom-grade transform inside out",
+      prices: ["Only $399 (Sedan/Hatch)", "Only $459 (SUV/Larger Cars)"],
+    },
   ];
 
   return (
-    <div className="flex flex-col h-full text-white mx-auto w-3/4 py-16">
+    <div
+      className="flex flex-col h-full text-white mx-auto w-3/4 pt-10 xl:pt-20"
+      id="home-services"
+    >
       <h2 className="text-3xl xl:text-4xl font-bold text-red-900 text-center mb-12">
         GET THE BEST DETAILING
       </h2>
@@ -91,7 +106,7 @@ const HomeServices = () => {
                 ))}
               </div>
             </div>
-          )
+          ),
         )}
       </div>
     </div>

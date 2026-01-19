@@ -15,7 +15,7 @@ const AddOns = () => {
     {
       title: "Ceramic & wax protection",
       image: "/ceramic-coating.jpg",
-      prices: ["Only $180 (Sedan/Hatch)", "Only $220 (SUV/Larger Cars)"],
+      prices: ["Only $1100 (Sedan/Hatch)", "Only $1450 (SUV/Larger Cars)"],
     },
     {
       title: "Headlight restoration",
@@ -25,7 +25,7 @@ const AddOns = () => {
   ];
 
   return (
-    <div className="flex flex-col h-full text-white mx-auto w-3/4 py-16">
+    <div className="flex flex-col h-full text-white mx-auto w-3/4 pt-10 xl:pt-20">
       <h2 className="text-3xl xl:text-4xl font-bold text-red-900 text-center mb-12">
         Add-ons
       </h2>

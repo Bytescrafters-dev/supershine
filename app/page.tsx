@@ -17,7 +17,7 @@ export default function Home() {
       <HomeServices />
       <AddOns />
       {/* <HowWeWork /> */}
-      {/* <Testimonials /> */}
+      <Testimonials />
     </main>
   );
 }

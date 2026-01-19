@@ -72,9 +72,12 @@ const HeroContent = () => {
         </motion.p>
 
         <motion.div variants={slideInFromLeft(1)} className="flex gap-8">
-          <button className="py-2 px-5 button-secondary text-center text-white cursor-pointer  rounded-lg max-w-[200px]">
+          <Link
+            href="#home-services"
+            className="py-2 px-5 button-secondary text-center text-white cursor-pointer  rounded-lg max-w-[200px]"
+          >
             Explore Services
-          </button>
+          </Link>
           <Link
             href="/contact-us"
             className="py-2 px-5 button-primary text-center text-white cursor-pointer  rounded-lg max-w-[200px]"

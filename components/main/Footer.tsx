@@ -43,7 +43,10 @@ const Footer = () => {
           <div className="text-center xl:text-left">
             <h3 className="font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-start space-x-4">
-              <Link href="#">
+              <Link
+                href="https://www.facebook.com/people/Super-Shine-Detailers/61585841798250"
+                target="_blank"
+              >
                 <Image
                   src={"/facebookIcon.png"}
                   alt="Facebook"
@@ -51,7 +54,10 @@ const Footer = () => {
                   height={24}
                 />
               </Link>
-              <Link href="#">
+              <Link
+                href="https://www.instagram.com/super_shine_detailers/"
+                target="_blank"
+              >
                 <Image
                   src={"/InstagramIcon.png"}
                   alt="Instagram"
@@ -59,10 +65,13 @@ const Footer = () => {
                   height={24}
                 />
               </Link>
-              <Link href="#">
+              <Link
+                href="https://www.tiktok.com/@super.shine55"
+                target="_blank"
+              >
                 <Image
-                  src={"/linkedinIcon.png"}
-                  alt="LinkedIn"
+                  src={"/tiktok-icon.png"}
+                  alt="Tiktok"
                   width={24}
                   height={24}
                 />

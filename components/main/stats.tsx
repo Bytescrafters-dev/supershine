@@ -21,14 +21,14 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="pt-20">
+    <section className="pt-10 xl:pt-20">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
+        <div className="flex xl:flex-wrap flex-col xl:flex-row gap-10 xl:gap-6 max-w-[80vw] mx-auto xl:max-w-none">
           {stats.map(({ number, key }) => {
             return (
               <div
                 key={key}
-                className="flex-1 flex flex-col gap-2 text-3xl items-center justify-center font-bold cursor-pointer"
+                className="flex-1 flex flex-row xl:flex-col gap-2 text-xl xl:text-3xl items-center justify-center font-bold cursor-pointer"
               >
                 <div className={`leading-snug text-white/80`}>
                   {key.split(" ")[0]}

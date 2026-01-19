@@ -1,22 +1,18 @@
 "use client";
 
-import { FaRegStar } from "react-icons/fa";
-import Image, { StaticImageData } from "next/image";
+import { FaStar } from "react-icons/fa";
 
 type TestimonialProps = {
   name: string;
-  profileImage: string;
   rating: number;
   description: string;
 };
 
-const TestimonialCard = ({
-  name,
-  profileImage,
-  rating,
-  description,
-}: TestimonialProps) => {
+const TestimonialCard = ({ name, rating, description }: TestimonialProps) => {
   const maxStars = 5;
+  const colors = ["#EF6C02", "#445A64", "#5C6BC0", "#004D40", "#02579B"];
+  const getRandomColor = () =>
+    colors[Math.floor(Math.random() * colors.length)];
 
   const getTruncatedText = (text: string, wordLimit: number) => {
     const words = text.split(" ");
@@ -26,7 +22,7 @@ const TestimonialCard = ({
 
   return (
     <div
-      className="p-6 rounded-xl border-2 border-orange-600 mb-4 shadow-lg shadow-black/50 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/50 text-center"
+      className="p-6 rounded-xl border-2 border-orange-600 mb-4 shadow-lg shadow-black/50 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/50 text-center h-80 flex flex-col"
       style={{
         background: "linear-gradient(145deg, #2a2a2a, #1a1a1a)",
         boxShadow:
@@ -41,25 +37,22 @@ const TestimonialCard = ({
           "inset 2px 2px 5px rgba(255, 255, 255, 0.1), inset -2px -2px 5px rgba(0, 0, 0, 0.5), 0 8px 16px rgba(0, 0, 0, 0.3)";
       }}
     >
-      <div className="w-20 h-20 mx-auto mb-4">
-        <Image
-          src={profileImage}
-          alt={`${name} profile`}
-          width={80}
-          height={80}
-          className="rounded-full object-cover"
-        />
+      <div
+        className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-white text-4xl font-bold"
+        style={{ backgroundColor: getRandomColor() }}
+      >
+        {name.charAt(0).toUpperCase()}
       </div>
       <h3 className="text-xl font-semibold mb-2">{name}</h3>
       <div className="flex justify-center mb-3 text-yellow-500">
         {[...Array(maxStars)].map((_, i) => (
-          <FaRegStar
+          <FaStar
             key={i}
             className={i < rating ? "fill-yellow-500" : "fill-gray-300"}
           />
         ))}
       </div>
-      <p className="text-gray-600 text-sm">
+      <p className="text-gray-100 text-sm grow">
         {getTruncatedText(description, 20)}
       </p>
     </div>

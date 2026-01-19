@@ -2,7 +2,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className="pt-20 h-full text-white mx-auto w-3/4">
+    <div className="pt-10 xl:pt-20 h-full text-white mx-auto w-3/4">
       <div className="w-full">
         <div className="text-3xl xl:text-4xl font-bold text-center mb-8 text-red-900">
           OUR MISSION
