@@ -19,6 +19,9 @@ const josefinSans = Josefin_Sans({
 export const metadata: Metadata = {
   title: "Super Shine",
   description: "Website developed for Super Shine car detailing company",
+  icons: {
+    icon: [{ url: "/favicon.ico" }],
+  },
 };
 
 export default function RootLayout({
