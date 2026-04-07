@@ -3,7 +3,7 @@ import { Inter, Kaushan_Script, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/main/Footer";
 import Header from "@/components/main/Header";
-import FacebookPixel from "@/components/config/FacebookPixel";
+import FacebookPixel from "@/components/config/meta-pixel";
 
 const inter = Inter({ subsets: ["latin"] });
 const kaushanScript = Kaushan_Script({
