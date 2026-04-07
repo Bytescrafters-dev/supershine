@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const META_PIXEL_ID = 1578169633397325;
 
 export default function MetaPixel() {
   const pathname = usePathname();
