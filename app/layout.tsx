@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Inter, Kaushan_Script, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/main/Footer";
@@ -60,7 +61,9 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <FacebookPixel />
+        <Suspense>
+          <FacebookPixel />
+        </Suspense>
       </body>
     </html>
   );
