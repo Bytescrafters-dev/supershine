@@ -26,7 +26,7 @@ const HomeServices = () => {
         "Roof upholstery cleaning.",
       ],
       tag: "Remove stains, sweat marks, dirt & odour",
-      prices: ["Only $249 (Sedan/Hatch)", "Only $289 (SUV/Larger Cars)"],
+      prices: ["Only $279 (Sedan/Hatch)", "Only $319 (SUV/Larger Cars)"],
     },
     {
       title: "Premium Polish & Wax",

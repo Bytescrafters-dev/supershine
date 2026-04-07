@@ -7,7 +7,7 @@ const stats = [
   },
   {
     number: 2,
-    key: "BEST CHEMICLES",
+    key: "BEST CHEMICALS",
   },
   {
     number: 3,
